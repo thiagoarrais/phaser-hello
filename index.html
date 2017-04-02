@@ -131,14 +131,7 @@ function update() {
 
         player.frame = 1;
     }
-    else
-    {
-        //  Stand still
-        player.animations.stop();
 
-        player.frame = 1;
-    }
-    
     //  Allow the player to jump if they are touching the ground.
     if (cursors.up.isDown && player.body.touching.down)
     {
